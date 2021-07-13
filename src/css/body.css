@@ -1,0 +1,101 @@
+.contai {
+    background-color: rgb(238, 238, 144);
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 96px;
+    padding-right: 96px;
+    width: 87%;
+    font-size: 30px;   
+    color: rgb(4, 66, 95);
+    font-weight:550;
+}
+
+.namedish {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 22px;
+    padding-right: 22px;
+    align-items: flex-start;
+    background-color: cadetblue;
+    width: 87%;
+}
+
+.pic {
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 3px solid;
+    border-color: black;
+}
+
+
+
+.leftcon {
+    margin-left: 32px;
+}
+
+.leftT {
+    margin-top:20px;
+    font-family: cursive;
+}
+
+.leftTw {
+    font-family: cursive;
+}
+
+.Middle {
+    font-family: cursive;
+
+}
+
+.MiddleTw{
+    background-color: rgba(223, 223, 114, 0.432);
+    margin-bottom: 6px;
+    margin-top: 2px;
+    padding: 6px;
+    height: 250px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: sans-serif,cursive;
+    overflow-y: scroll;
+}
+
+.Bottom {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    font-family: cursive;
+    
+}
+
+.BottomTw {
+    background-color: rgba(223, 223, 95, 0.363);
+    margin-top: 4px;
+    margin-bottom:4px;
+    font-family: sans-serif,cursive;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+.cpoint{
+    margin-left: 18em;
+    cursor: pointer;
+}
+
+.like {
+    color: red;
+}

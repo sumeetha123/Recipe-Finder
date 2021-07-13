@@ -1,0 +1,14 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.headng {
+    height: 40px;
+    padding-top: 20px;
+    color: brown;
+    font-size: 55px;
+}

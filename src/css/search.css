@@ -1,0 +1,40 @@
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+}
+
+
+
+.search {
+    
+    border: 2px;
+    border-color: black;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    margin-right: 12px;
+    
+    
+}
+
+.but {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(241, 221, 221, 0.938);
+    border-radius: 3px;
+    text-decoration: rgb(3, 3, 3);
+    
+}
+
+.line {
+    font-style: bold;
+    font-weight: 500px;
+    font-size: 35px;
+}
