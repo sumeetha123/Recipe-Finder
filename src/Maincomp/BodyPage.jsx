@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import itemService from '../sources/itemService';
+import ItemsSer from '../sources/items';
 import ItemModel from './ItemsPage';
 import '../css/search.css';
 
@@ -8,8 +8,8 @@ class Input extends Component {
         meals:[],
         inputValue:''
      }
-     getItems = async() =>{
-            itemService.getItem(this.state.inputValue).then(({data})=>{
+     getDishes = async() =>{
+            ItemsSer.getDish(this.state.inputValue).then(({data})=>{
                 let {meals}=data;
                 this.setState({meals});
         }).catch(()=>{
@@ -19,7 +19,7 @@ class Input extends Component {
         )
 
     };
-    handleChange = ({ target }) => {
+    ChangeHandler = ({ target }) => {
         const inputValue = target.value;
         this.setState({ inputValue });
         
@@ -29,15 +29,15 @@ class Input extends Component {
         return (
             <React.Fragment>
                 <div className="cont">
-                    <input onChange={this.handleChange} type="text" placeholder="Enter the name of the dish" value={inputValue}className="search"/>
-                    <button onClick={this.getItems} className="but">Get Recipies</button>
+                    <input onChange={this.ChangeHandler} type="text" placeholder="Enter the name of the dish" value={inputValue}className="search"/>
+                    <button onClick={this.getDishes} className="but">Get Recipies</button>
                 </div>
                 {inputValue===""?
 
                 <h2 className="line" id="h2-title">Type a Dish Name to Search for it's ingredients</h2>
                 :
                 meals===null?
-                <h2 className="line" id="h2-title">No Data Has been received</h2>
+                <h2 className="lines" id="h2-title">No Data Has been received</h2>
 :
                 
             meals.map((meal)=>{
