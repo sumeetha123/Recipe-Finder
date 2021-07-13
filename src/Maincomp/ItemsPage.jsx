@@ -9,7 +9,7 @@ class ItemModel extends Component {
 
     changeColor = () => {
         let value = document.querySelector("#changeColor");
-        value.classList.toggle("")
+        value.classList.toggle("{{style = color:red}}")
     }
    
     render() { 
